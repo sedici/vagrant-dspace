@@ -1,6 +1,7 @@
 # Ignore any .yaml files except default.yaml
 *.yaml
 !default.yaml
+!local.yaml
 
 # Ignore any customized local-bootstrap.sh file
 # which is run during 'vagrant up'
