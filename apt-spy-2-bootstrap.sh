@@ -30,7 +30,7 @@ update_rubygems >/dev/null
 CURRENTIP=`dig +short myip.opendns.com @resolver1.opendns.com`
 
 # Next, let's lookup our country code via IP address
-COUNTRY=`geoiplookup $CURRENTIP | awk -F: '{ print $2 }' | awk -F, '{ print $1}' | tr -d "[:space:]"`
+#COUNTRY=`geoiplookup $CURRENTIP | awk -F: '{ print $2 }' | awk -F, '{ print $1}' | tr -d "[:space:]"`
 
 #If country code is empty or != 2 characters, then use "US" as a default
 if [ -z "$COUNTRY" ] || [ "${#COUNTRY}" -ne "2" ]; then
