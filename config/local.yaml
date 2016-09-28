@@ -95,9 +95,9 @@ dspace::git_branch        : 'master'
 # Initial Admin account to auto-create for DSpace
 # After DSpace starts, you will be able to immediately login using the specified "admin_email" and "admin_passwd"
 # (Changes to these settings require a 'vagrant provision' to take effect)
-dspace::admin_firstname   : 'Facundo'
+dspace::admin_firstname   : 'DEMOUSER'
 dspace::admin_lastname    : 'SEDICI'
-dspace::admin_email       : 'facundo+vagrant_admin_test@sedici.unlp.edu.ar'
+dspace::admin_email       : 'demouser@sedici.unlp.edu.ar'
 dspace::admin_passwd      : 'admin_passwd'
 dspace::admin_language    : 'es'
 
@@ -106,6 +106,12 @@ dspace::admin_language    : 'es'
 #-------------------------------
 # Note: 10673 is the handle_prefix assigned to demo.dspace.org
 dspace::handle_prefix : 123456789
+
+#-------------------------------
+# DSpace custom registry file
+#-------------------------------
+# Load a custom registry file different to local-types.xml
+#dspace::custom_registry_file : 'cic-types.xml'
 
 #------------------------------
 # DSpace Build/Install settings
@@ -124,4 +130,4 @@ dspace::handle_prefix : 123456789
 # Options to pass to Tomcat
 # This IS customizable. Feel free to tweak memory settings, etc.
 # (Changes to this setting require a 'vagrant provision' to take effect)
-dspace::catalina_opts     : '-Djava.awt.headless=true -Dfile.encoding=UTF-8 -Dcom.sun.management.jmxremote=true -Xmx2048m -Xms1200m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC -Djava.security.egd=file:/dev/./urandom'
+#dspace::catalina_opts     : '-Djava.awt.headless=true -Dfile.encoding=UTF-8 -Dcom.sun.management.jmxremote=true -Xmx1200m -Xms1200m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC -Djava.security.egd=file:/dev/./urandom'

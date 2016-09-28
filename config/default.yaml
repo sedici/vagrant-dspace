@@ -97,6 +97,12 @@ dspace::admin_email       : 'dspacedemo+admin@gmail.com'
 dspace::admin_passwd      : 'vagrant'
 dspace::admin_language    : 'en'
 
+#-------------------------------
+# DSpace custom registry file
+#-------------------------------
+# Load a custom registry file different to local-types.xml
+dspace::custom_registry_file : 'cic-types.xml'
+
 #------------------------------
 # DSpace Build/Install settings
 #------------------------------
