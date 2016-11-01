@@ -86,7 +86,7 @@ vm_gui_mode     : false
 # it will be dynamically changed into the HTTPS GitHub URL (https://github.com/[user]/[proj])
 # You may also change "git_repo" to an HTTPS URL in order to force HTTPS at all times.
 # (Changes to these settings require a 'vagrant destroy && vagrant up' to take effect)
-dspace::git_repo          : 'https://github.com/CICBA/DSpace.git'
+dspace::git_repo          : 'https://github.com/uner-digital/DSpace.git'
 dspace::git_branch        : 'master'
 
 #-------------------------------
